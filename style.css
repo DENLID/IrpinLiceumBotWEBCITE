@@ -21,11 +21,16 @@ button:hover {
     background: var(--tg-theme-secondary-bg-color);
 }
 
-input.text {
+input {
+    width:  192px;
+    margin: 5px 0px 0px 0px;
+}
+
+select {
     width:  200px;
-    height: 15px;
-    padding: 5px 10px 5px 10px;
-    border:1px solid #999;
-    font-size:16px;
-    font-family: Tahoma;
+}
+
+textarea {
+    width:  194px;
+    margin: 5px 0px 0px 0px;
 }
