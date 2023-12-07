@@ -2,7 +2,7 @@ let tg = window.Telegram.WebApp;
 tg.MainButton.setText("Відправити");
 tg.MainButton.show();
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
+WebApp.onEvent("mainButtonClicked", function(){
     let input1 = document.getElementById("input1").value;
     let input2 = document.getElementById("input2").value;
 
