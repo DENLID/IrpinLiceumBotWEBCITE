@@ -1,4 +1,5 @@
 let tg = window.Telegram.WebApp;
+tg.expand()
 tg.MainButton.setText("Відправити");
 tg.MainButton.show();
 
