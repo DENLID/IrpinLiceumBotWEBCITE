@@ -4,14 +4,16 @@ tg.MainButton.setText("Відправити");
 tg.MainButton.show();
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    let ms = document.getElementById("input1").value;
-    let clas = document.getElementById("input2").value;
-    let ms_num = document.getElementById("input1").value;
-    let class_num = document.getElementById("input2").value;
+    let class_number = document.getElementById("class_number").value;
+    let class_letter = document.getElementById("class_letter").value;
+    let ms_number = document.getElementById("ms_number").value;
+    let students_number = document.getElementById("students_number").value;
 
     data = {
-        ms: ms,
-        class: clas
+        class_number: class_number,
+        class_letter: class_letter,
+        ms_number: ms_number,
+        students_number: students_number
     }
     
     tg.sendData(JSON.stringify(data));
