@@ -10,6 +10,15 @@
             color: var(--tg-theme-bg-color);
             background: var(--tg-theme-text-color);
         }
+
+        h1 {
+            color: var(--tg-theme-text-color);
+        }
+        
+        p {
+            color: var(--tg-theme-hint-color);
+        }
+
         
         button {
             color: var(--tg-theme-button-color);
@@ -32,6 +41,8 @@
     <script>
         let tg = window.Telegram.WebApp;
         let button = document.getElementById("b1");
+        tg.MainButton.setText = "Выдправити"
+        tg.MainButton.show()
 
         button.addEventListener("click", () => {
             let input1 = document.getElementById("input1").value;
