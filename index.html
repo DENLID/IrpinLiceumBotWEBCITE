@@ -13,17 +13,17 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
-        let button = document.getElementById("b1")
+        let button = document.getElementById("b1");
 
         button.addEventListener("click", () => {
-            let input = document.getElementById("input1").value
+            let input = document.getElementById("input1").value;
 
             data = {
                 input: input
             }
             
-            tg.sendData(JSON.stringify(data))
-            tg.close()
+            tg.sendData(JSON.stringify(data));
+            tg.close();
         })
     </script>
 </body>
