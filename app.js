@@ -7,7 +7,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
     let clas = document.getElementById("input2").value;
 
     data = {
-        ms: input1,
+        ms: ms,
         class: clas
     }
     
