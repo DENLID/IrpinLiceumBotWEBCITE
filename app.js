@@ -3,12 +3,12 @@ tg.MainButton.setText("Відправити");
 tg.MainButton.show();
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    let input1 = document.getElementById("input1").value;
-    let input2 = document.getElementById("input2").value;
+    let ms = document.getElementById("input1").value;
+    let clas = document.getElementById("input2").value;
 
     data = {
         ms: input1,
-        class: input2
+        class: clas
     }
     
     tg.sendData(JSON.stringify(data));
