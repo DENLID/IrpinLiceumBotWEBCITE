@@ -35,8 +35,8 @@
             <option>З</option>
             <option>И</option>    
         </select><br>
-        <input type = "number", id = "students_number", placeholder = "Кількість учнів в класі">
-        <input type = "number", id = "ms_number", placeholder = "Кількість відсутніх в класі"><br>
+        <input pattern="\d*", type = "number", id = "students_number", placeholder = "Кількість учнів в класі">
+        <input pattern="\d*", type = "number", id = "ms_number", placeholder = "Кількість відсутніх в класі"><br>
         <textarea id = "ms" placeholder = "Відсутні"></textarea>
     </form>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
