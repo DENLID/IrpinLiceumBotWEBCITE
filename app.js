@@ -35,8 +35,10 @@ function updateSubmitBtn(){
     debugger;
     if(ms_numberv && msv && students_numberv){
         tg.MainButton.enable()
+        tg.MainButton.setParams({"color": "#143F6B"});
     }else {
         tg.MainButton.disable()
+        tg.MainButton.setParams({"color": "#143F6B"});
     }
 }
 
