@@ -35,10 +35,10 @@ function updateSubmitBtn(){
     debugger;
     if(ms_numberv && msv && students_numberv){
         tg.MainButton.enable()
-        tg.MainButton.setParams({"color": "#143F6B"});
+        tg.MainButton.setParams({"color": "#3e88f7"});
     }else {
         tg.MainButton.disable()
-        tg.MainButton.setParams({"color": "#143F6B"});
+        tg.MainButton.setParams({"color": "#c9c9c9"});
     }
 }
 
