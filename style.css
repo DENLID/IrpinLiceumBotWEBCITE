@@ -30,6 +30,10 @@ select {
     width:  200px;
 }
 
+button:disabled {
+    color: #c9c9c9;
+}
+
 textarea {
     width:  194px;
     margin: 5px 0px 0px 0px;
