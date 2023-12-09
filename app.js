@@ -3,6 +3,7 @@ tg.expand()
 tg.MainButton.setText("Відправити");
 tg.MainButton.show();
 tg.MainButton.disable()
+tg.MainButton.setParams({"color": "#c9c9c9"});
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
     let class_number = document.getElementById("class_number").value;
