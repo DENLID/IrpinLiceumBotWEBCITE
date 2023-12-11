@@ -43,6 +43,19 @@ function updateSubmitBtn(){
     }
 }
 
+const hideMobileKeyboardOnReturn = (keyboardEvent) => {
+    element.addEventListener('keyup', (keyboardEvent) => {
+        if (keyboardEvent.code === 'Enter') {
+            element.blur();
+        }
+    });
+};
+
+document.querySelementectorAll('[type=search]').forEach((element) => {
+    hideMobileKeyboardOnReturn(element);
+}); 
+
 students_number.addEventListener('change', updateSubmitBtn);
 ms_number.addEventListener('change', updateSubmitBtn);
 ms.addEventListener('change', updateSubmitBtn);
+
