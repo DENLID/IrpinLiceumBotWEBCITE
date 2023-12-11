@@ -52,7 +52,7 @@ const hideMobileKeyboardOnReturn = (keyboardEvent) => {
 };
 
 document.querySelementectorAll('[type=search]').forEach((element) => {
-    hideMobileKeyboardOnReturn(element);
+    alert("da")
 }); 
 
 students_number.addEventListener('change', updateSubmitBtn);
