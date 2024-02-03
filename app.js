@@ -1,5 +1,5 @@
 let tg = window.Telegram.WebApp;
-//ffff
+
 tg.expand()
 tg.MainButton.setText("Відправити");
 tg.MainButton.show();
@@ -44,7 +44,7 @@ function updateSubmitBtn(){
     }
 }
 
-students_number.addEventListener('change', updateSubmitBtn);
-ms_number.addEventListener('change', updateSubmitBtn);
-ms.addEventListener('change', updateSubmitBtn);
+students_number.addEventListener('input', updateSubmitBtn);
+ms_number.addEventListener('input', updateSubmitBtn);
+ms.addEventListener('input', updateSubmitBtn);
 

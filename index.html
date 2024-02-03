@@ -42,17 +42,5 @@
     </form>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="app.js"></script>
-    <script>
-        // Получаем все элементы ввода на странице
-        var inputs = document.querySelectorAll("input, textarea, select");
-      
-        // Добавляем обработчик события blur для каждого элемента ввода
-        for (var i = 0; i < inputs.length; i++) {
-          inputs[i].addEventListener("blur", function() {
-            // Закрываем клавиатуру, вызывая метод blur() у активного элемента
-            document.activeElement.blur();
-          });
-        }
-      </script>
 </body>
 </html>
