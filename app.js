@@ -10,6 +10,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
     let class_number = document.getElementById("class_number").value;
     let class_letter = document.getElementById("class_letter").value;
     let ms_number = document.getElementById("ms_number").value;
+    let ms_number_hv = document.getElementById("ms_number_hv").value;
     let students_number = document.getElementById("students_number").value;
     let ms = document.getElementById("ms").value;
 
@@ -17,6 +18,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
         class_number: class_number,
         class_letter: class_letter,
         ms_number: ms_number,
+        ms_number_hv: ms_number_hv,
         students_number: students_number,
         ms: ms
     }
@@ -26,16 +28,18 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 });
 
 let ms_number = document.getElementById("ms_number");
+let ms_number_hv = document.getElementById("ms_number_hv");
 let students_number = document.getElementById("students_number");
 let ms = document.getElementById("ms");
 
 
 function updateSubmitBtn(){
     const ms_numberv = ms_number.value.trim();
+    const ms_number_hvv = ms_number_hv.value.trim();
     const msv = ms.value.trim();
     const students_numberv = students_number.value.trim();
     debugger;
-    if(ms_numberv && msv && students_numberv){
+    if(ms_numberv && msv && students_numberv && ms_number_hvv){
         tg.MainButton.enable()
         tg.MainButton.setParams({"color": "#3e88f7"});
     }else {
